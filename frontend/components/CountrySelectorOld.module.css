@@ -1,0 +1,19 @@
+.container {
+  /* border: 1px solid red; */
+  flex-shrink: 0;
+  display: flex;
+}
+
+.container * {
+  border: none !important; 
+} 
+
+.select {  
+  font-family: sans-serif;
+  width: 200px;
+}
+
+.select > div:nth-of-type(1) {
+  border-radius: 1000px !important;
+  padding: 0px 5px;
+}

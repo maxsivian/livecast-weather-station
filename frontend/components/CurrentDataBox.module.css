@@ -1,0 +1,211 @@
+.cardContainer {
+  /* border: 1px solid rgba(128, 128, 128, 0.418); */
+  /* width: 400px; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 0px;
+
+  --stroke-color: var(--color3);
+  --header-height: 60px;
+  --left-box-width: 90px;
+  --border-radius: 20px;
+  --border-color: var(--color3);
+}
+
+
+.cardHeader {
+  /* border: 1px solid greenyellow; */
+  display: flex;
+  justify-content: space-between;
+  height: var(--header-height);
+  width: 100%;
+
+  position: relative;
+  /* top: 1px; */
+}
+
+
+.left {
+  /* border: 2px solid palevioletred; */
+  display: flex;
+  flex-basis: 1;
+}
+
+
+.middle{
+  /* border: 1px solid red; */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.right {
+  /* border: 2px solid purple; */
+  display: flex;
+  flex-basis: 1
+}
+
+
+.flip {
+  transform: rotateY(180deg);
+}
+
+
+.leftBox {
+  /* border: 2px solid red; */
+  /* height: 100%; */
+  width: var(--left-box-width);
+  background-color: var(--color2);
+  border-top: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-top-left-radius: var(--border-radius);
+  z-index: 1;
+}
+
+
+.rightBox {
+  /* border: 2px solid red; */
+  /* height: 100%; */
+  width: var(--left-box-width);
+  background-color: var(--color2);
+  border-top: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-top-right-radius: var(--border-radius);
+  z-index: 1;
+}
+
+.svg {
+  /* border: 2px solid blue; */
+  height: 100%;
+}
+
+.textLeft {
+  /* border: 1px solid green; */
+  position: absolute;
+  z-index: 1;
+  top: 0%;
+  left: 0%;
+
+  word-break: normal;
+  width: 150px;
+  height: 100%;
+  overflow: hidden;
+
+  padding: 0px 0px 0px 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* gap: 3px; */
+
+  font-size: 1.1rem;
+}
+
+.textRight {
+  /* border: 1px solid yellow; */
+  position: absolute;
+  z-index: 1;
+  top: 0%;
+  right: 0%;
+
+  word-break: normal;
+  width: 150px;
+  height: 100%;
+  overflow: hidden;
+
+  padding: 0px 10px 0px 0px;
+  display: flex;
+  justify-content: flex-end;
+  /* flex-direction: column; */
+  align-items: center;
+  gap: 10px;
+
+  font-size: 1.1rem;
+}
+
+
+.card {
+  background-color: var(--color5);
+  border: 1px solid var(--border-color);
+  color: white;
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  /* height: 100%; */
+
+  display: flex;
+  /* align-items: center; */
+  backdrop-filter: blur(5px);
+}
+
+.first,
+.second {
+  /* border: 1px solid pink; */
+  width: 200px;
+  flex-shrink: 0;
+  padding: 5px 5px 7px 5px;
+
+}
+
+.second{
+  width: 190px;
+}
+
+
+.weatherIcon {
+  /* border: 1px solid yellow; */
+  width: 80px;
+  height: 80px;
+  position: relative;
+  top: -25px;
+}
+
+.condition{
+  word-wrap: break-word;
+  color: var(--color3);
+  margin-bottom: 5px;
+}
+
+.dataC {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dataCC {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 10px;
+}
+
+
+.airQualityHeading{
+  /* color: var(--color5); */
+  font-weight: bolder; 
+  margin-top: 5px;
+}
+
+
+.loading{
+  /* border: 1px solid red; */
+  width: 50px;
+}
+
+
+.answer{
+  display: flex;
+  gap: 2px;
+}
+
+
+
+@media screen and (max-width: 420px) {
+  .cardContainer *{
+    font-size: 14px;     
+  } 
+  .first {
+    width: 175px;
+  }
+  .second{
+    width: 165px;
+  }
+} 

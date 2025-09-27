@@ -1,0 +1,126 @@
+.content {
+  /* border: 1px solid cyan; */
+  padding: 0px 3px 50px 3px;
+  width: fit-content;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  
+  scroll-behavior: smooth !important;  
+  position: relative;
+}
+
+.content h1 {
+  color: var(--color1);
+  margin: auto;
+}
+
+.content h2 {
+  margin: auto auto 5px auto;
+}
+
+
+.first{
+  text-align: justify;
+  padding: 10px !important;
+}
+
+.first,
+.second,
+.third,
+.fourth {
+  /* border: 1px solid red; */
+  background-color: var(--color5);
+  padding: 10px 3px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  backdrop-filter: blur(3px);
+}
+
+.second,
+.fourth {
+  gap: 20px;
+}
+
+.second h2,
+.fourth h2 {
+  margin-left: 10px;
+}
+
+.second > div:nth-of-type(1),
+.second > div:nth-of-type(2) {
+  /* border: 1px solid red; */
+  width: fit-content;
+  margin: auto;
+}
+
+.third > *,
+.fourth > * {
+  /* border: 1px solid red; */
+  width: fit-content;
+  margin: auto;
+}
+
+
+.table {
+  /* border: 1px solid cadetblue; */
+  border-collapse: collapse;
+}
+
+.tableWrapper {
+  border: 1px solid var(--color1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table td {
+  border-bottom: 1px solid var(--color1);
+  padding: 3px 6px;
+  text-align: center;
+  border-right: 1px solid var(--color1);
+}
+
+.table th {
+  border: 1px solid var(--color1);
+  padding: 3px 6px;
+  background-color: var(--color1);
+  color: black;
+}
+
+.table td:nth-last-of-type(1) {
+  border-right-width: 0px;
+}
+
+.table tr:nth-last-of-type(1) td {
+  border-bottom-width: 0px;
+}
+
+
+.colorSystemContainer{
+  width: min(1120px, 98vw);
+  flex-shrink: 0;
+  overflow-x: scroll; 
+  margin: auto;
+  padding: 10px;
+}
+
+.weatherColorTable{
+  min-width: 1010px;
+}
+
+.airQualityColorTable{
+   width: 840px;
+}
+
+
+.italic{
+  font-style: italic;
+}
+
+.white {
+  color: aliceblue !important;
+}

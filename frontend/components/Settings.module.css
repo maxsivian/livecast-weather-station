@@ -1,0 +1,207 @@
+.container {
+  /* border: 1px solid yellow; */
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.button {
+  /* border: 1px solid red !important; */
+  height: 100%;
+  background-color: transparent;
+  border: none;
+}
+
+.icon {
+  /* border: 1px solid red; */
+  width: 30px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes IconRotate {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.icon:hover {
+  animation-name: IconRotate;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+
+.overlay {
+  position: absolute;
+  /* top: -10px; */
+  /* left: 0; */
+  /* left: -7.8%; */
+  /* left: -70px; */
+  top: 0;
+  left: 0;
+  /* width: 100vw; */
+  /* height: 100vh; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* background-color: rgba(0, 0, 0, 0.5); */
+
+  z-index: 100;
+
+}
+
+.box {
+  border: 1px solid var(--color1);
+  width: 250px;
+  max-width: 80vw;
+  border-radius: 10px;
+  padding: 20px;
+  padding-top: 35px;
+
+
+  /* background-color: var(--color2); */
+  background-color: rgba(128, 128, 128, 0.13);
+
+  box-shadow: 0px 0px 10px black;
+  backdrop-filter: blur(5px) !important;
+  /* -webkit-backdrop-filter: blur(5px) !important; */
+  
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.box button {
+  background-color: var(--color-c1);
+  /* background-color: rgba(0, 0, 0, 0.459); */
+  /* backdrop-filter: blur(4px); */
+
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 5px 5px 5px 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  transition: transform 0.3s;
+}
+
+.box button:hover {
+  transform: scale(1.05);
+}
+
+
+.closeButton {
+  border-radius: 0px !important;
+  width: 30px !important;
+  height: 30px !important;
+  padding: 0px !important;
+  background-color: crimson !important;
+  border-top-right-radius: 9px !important;
+  border-bottom-left-radius: 10px !important;
+
+  justify-content: center !important;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.closeButton:hover {
+  background-color: rgb(226, 74, 104) !important;
+  transform: scale(1) !important;
+}
+
+
+
+.deleteIcon {
+  width: 30px;
+}
+
+.clearBtn {
+  font-size: 1.1rem;
+}
+
+
+.colorThemeBox {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.colorThemeBox h3{
+  color: white;
+  /* width: fit-content; */
+  /* margin: auto; */
+  font-weight: 100;
+}
+
+.colorThemeBox button {
+  color: black;
+}
+
+.blueTheme {
+  background-color: cadetblue !important; 
+  box-shadow: 0px 0px 5px rgb(53, 52, 52) !important;
+}
+
+.greenTheme {
+  background-color: rgb(4, 170, 107) !important;
+  box-shadow: 0px 0px 5px rgb(53, 52, 52) !important;
+}
+
+.pinkTheme {
+  background-color: rgb(253, 134, 154) !important;
+  box-shadow: 0px 0px 5px rgb(53, 52, 52) !important;
+}
+
+.violetTheme {
+  background-color: rgb(192, 0, 192) !important;
+  box-shadow: 0px 0px 5px rgb(53, 52, 52) !important;
+}
+
+
+
+.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.hide {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.closeSvg{
+  width: 60%;
+}
+
+
+
+@media screen and (max-width: 425px) {
+  .icon{
+    width: 25px;
+  }
+}

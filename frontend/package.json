@@ -1,0 +1,25 @@
+{
+  "name": "livecast-weather-station-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next export"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.6.1",
+    "express": "^4.21.2",
+    "next": "15.2.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-loader-spinner": "^6.1.6",
+    "react-redux": "^9.2.0",
+    "react-select": "^5.10.1",
+    "react-toastify": "^11.0.5",
+    "react-top-loading-bar": "^3.0.2",
+    "world-countries": "^5.1.0"
+  }
+}

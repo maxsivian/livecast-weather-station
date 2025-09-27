@@ -1,0 +1,10 @@
+
+https://api.weatherapi.com/v1/forecast.json?key=fbcd4de7c4b04d579f9174512251903&q=London&days=8&aqi=yes&alerts=yes&hour=24
+https://api.weatherapi.com/v1/forecast.json?key=fbcd4de7c4b04d579f9174512251903&q=103.91.186.238&days=8&aqi=yes&alerts=yes&hour=24
+
+
+
+Solar Irradiance
+Evapotranspiration (Enterprise)
+Wind at 100m (Enterprise)
+Marine Weather and Tide Data 
