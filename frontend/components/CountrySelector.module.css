@@ -133,12 +133,15 @@
 
   position: absolute;
   top: var(--dropdown-top);
+
 }
 
 .dropdown > div {
   word-wrap: break-word;
   padding: 3px;
-  text-align: center;
+  /* text-align: center; */
+  text-align: left;
+
 }
 
 .dropdown > div:hover {
